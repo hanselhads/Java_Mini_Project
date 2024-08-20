@@ -1,0 +1,44 @@
+body
+{
+  background-image: url('../Images/bg.jpg');
+  opacity: .8;
+  line-height: 25px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imga
+{
+  height: 50px;
+  width: 50px;
+}
+
+.or
+{
+  max-height: 500px;
+  width: auto;
+}
+
+div
+{
+  background-color: white;
+  font-size: 15px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 20px;
+}
+
+input
+{
+  width: 305px;
+}
+
+.Login
+{
+  width: 75%;
+  align-items: center;
+}

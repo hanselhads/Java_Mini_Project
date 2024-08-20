@@ -1,0 +1,98 @@
+*
+{
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+body
+{
+  margin: 0px;
+  background: linear-gradient(to right,#99f5e0, #0d50a9);
+}
+.Setting
+{
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+/*----------------------------NAVIGATION--------------------------------------------*/
+
+.Setting .Navigation
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Setting .Navigation img.Logo
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Setting .Navigation img.User
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Setting .Navigation div .material-icons-outlined
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  color: black;
+}
+
+/*----------------------------MAIN--------------------------------------------*/
+
+.Setting .Main .Title
+{
+  position: relative;
+  margin-top: 50px;
+}
+
+.Setting .Main .Title h1
+{
+  font-size: 35px;
+}
+
+
+
+/*----------------------------MEDIA QUERY 1024px--------------------------------------------*/
+@media only screen and (min-width: 1024px)
+{
+  .Setting .Navigation,
+  .Setting .Navigation div span,
+  section.Navigation
+  {
+    display: block;
+  }
+
+  .Setting .Navigation
+  {
+    width: 60px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .Setting .Navigation div
+  {
+    margin-top: 18vh;
+    margin-bottom: 18vh;
+  }
+
+  .Setting .Navigation div span
+  {
+    margin-top: 5vh;
+  }
+
+  section.Main
+  {
+    width: 65%;
+    margin-left: 90px;
+    margin-right: 20px;
+  }
+}

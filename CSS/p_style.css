@@ -1,0 +1,131 @@
+*
+{
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+body
+{
+  margin: 0px;
+  background: linear-gradient(to right,#99f5e0, #0d50a9);
+}
+.Page
+{
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+/*----------------------------NAVIGATION--------------------------------------------*/
+.Page .Navigation
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Page .Navigation img.Logo
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Page .Navigation img.User
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Page .Navigation div .material-icons-outlined
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  color: black;
+}
+
+/*----------------------------MAIN--------------------------------------------*/
+
+.Page .Main .Title
+{
+  position: relative;
+  margin-top: 50px;
+}
+
+.Page .Main .Title h1
+{
+  font-size: 35px;
+}
+
+.collapsible
+{
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover
+{
+  background-color: #555;
+}
+
+.content
+{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/*----------------------------MEDIA QUERY 1024px--------------------------------------------*/
+@media only screen and (min-width: 1024px)
+{
+  .Page .Navigation,
+  .Page .Navigation div span
+  {
+    display: block;
+  }
+
+  .Page .Navigation
+  {
+    width: 60px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .Page .Navigation div
+  {
+    margin-top: 18vh;
+    margin-bottom: 18vh;
+  }
+
+  .Page .Navigation div span
+  {
+    margin-top: 5vh;
+  }
+}
+
+/*----------------------------MEDIA QUERY 1111px--------------------------------------------*/
+@media only screen and (min-width: 1111px)
+{
+  section.Main .Module
+  {
+    width: 32%;
+    display: inline-block;
+  }
+
+  section.Main
+  {
+    width: 85%;
+    margin-left: 90px;
+    margin-right: 20px;
+    justify-content: space-between;
+  }
+}

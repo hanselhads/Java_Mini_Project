@@ -1,0 +1,112 @@
+*
+{
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+
+}
+body
+{
+  margin: 0;
+  background: linear-gradient(to right,#99f5e0, #0d50a9);
+}
+.Account
+{
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+/*----------------------------NAVIGATION--------------------------------------------*/
+
+.Account .Navigation
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Account .Navigation img.Logo
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Account .Navigation img.User
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Account .Navigation div .material-icons-outlined
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  color: black;
+}
+
+/*----------------------------MAIN--------------------------------------------*/
+
+.Account .Main .Title
+{
+  position: relative;
+  margin-top: 50px;
+}
+
+.Account .Main .Title h1
+{
+  font-size: 35px;
+}
+
+.Account .Main td.Labels
+{
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-right: 60px;
+}
+
+.Account .Main td.Inputs
+{
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 60px;
+}
+
+
+/*----------------------------MEDIA QUERY 1024px--------------------------------------------*/
+@media only screen and (min-width: 1024px)
+{
+  .Account .Navigation,
+  .Account .Navigation div span,
+  section.Navigation
+  {
+    display: block;
+  }
+
+  .Account .Navigation
+  {
+    width: 60px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .Account .Navigation div
+  {
+    margin-top: 18vh;
+    margin-bottom: 18vh;
+  }
+
+  .Account .Navigation div span
+  {
+    margin-top: 5vh;
+  }
+
+  section.Main
+  {
+    width: 65%;
+    margin-left: 90px;
+    margin-right: 20px;
+  }
+}

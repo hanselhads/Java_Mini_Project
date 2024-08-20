@@ -1,0 +1,434 @@
+*
+{
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+body
+{
+  margin: 0px;
+  background: linear-gradient(to right,#99f5e0, #0d50a9);
+}
+.Dashboard
+{
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+/*----------------------------NAVIGATION--------------------------------------------*/
+.Dashboard .Navigation
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Dashboard .Navigation img.Logo
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Dashboard .Navigation img.User
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.Dashboard .Navigation div .material-icons-outlined
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  color: black;
+}
+
+
+/*----------------------------MAIN DASHBOARD--------------------------------------------*/
+
+/*----------------------------SEARCH--------------------------------------------*/
+
+.Dashboard .Main .Search form
+{
+  position: relative;
+}
+
+.Dashboard .Main .Search
+{
+  margin-top: 40px;
+}
+
+.Dashboard .Main .Search form input
+{
+  width: 100%;
+  font-size:16px;
+  padding: 10px 10px 10px 60px;
+  border: 1px solid #999999;
+  background-color: rgba(0 0 0 /0);
+}
+
+.Dashboard .Main .Search form span
+{
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  color: #727272;
+}
+
+.Dashboard .Main .Search .Notification
+{
+  margin-top: 20px;
+  position: relative;
+}
+
+.Dashboard .Main .Search .Notification::before
+{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: sandybrown;
+  position: absolute;
+  border-radius: 10px;
+  top: 5px;
+}
+
+/*----------------------------MODULE TITLE--------------------------------------------*/
+
+.Dashboard .Main .Title
+{
+  margin-bottom: 30px;
+}
+
+.Dashboard .Main .Title h1
+{
+  font-size: 35px;
+  line-height: 0px;
+}
+
+.Dashboard .Main .Title
+{
+  margin-top: 40px;
+}
+
+.Dashboard .Main .Title label
+{
+  margin-right: 15px;
+  color: #727272;
+  font-size: 16px;
+}
+
+.Dashboard .Main .Title select
+{
+  border: none;
+  font-size: 16px;
+  background-color: rgba(0 0 0/0);
+}
+
+/*----------------------------MODULES--------------------------------------------*/
+
+.Dashboard .Main .Module_List .Module h2
+{
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.Dashboard .Main .Module_List .Module p
+{
+  color: #727272;
+}
+
+.Dashboard .Main .Module_List .Module ul
+{
+  list-style: none;
+  position: relative;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.Dashboard .Main .Module_List .Module ul li
+{
+  position: relative;
+  color: #727272;
+  margin-left: 15px;
+}
+
+.Dashboard .Main .Module_List .Module ul li::before
+{
+  content: "\268A";
+  position: absolute;
+  left: -15px;
+  top: -5px;
+}
+
+.Dashboard .Main .Module_List .Module .meta
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.Dashboard .Main .Module_List .Module
+{
+  padding: 20px 20px 20px 60px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.Dashboard .Main .Module_List .Module .Category
+{
+  width: 30px;
+  height: 50px;
+  border-radius: 0px 10px 10px 0px;
+  position: absolute;
+  left: 0px;
+}
+
+.Dashboard .Main .Module_List .Module:hover,
+.Dashboard .Main .Module_List .Module:hover h3,
+.Dashboard .Main .Module_List .Module:hover p,
+.Dashboard .Main .Module_List .Module:hover ul li
+{
+  background-color: BLACK;
+  text-decoration-color: #ffffff;
+  transition: 0.5s;
+  color: white;
+  box-shadow: none;
+  border-color: #000000;
+  transform-origin: 0 bottom 0;
+  transform: scaleY(100%);
+}
+
+
+.Category_color1
+{
+  background-color: tan !important;
+}
+
+.Category_color2
+{
+  background-color: sandybrown !important;
+}
+
+.Category_color3
+{
+  background-color: rebeccapurple !important;
+}
+
+.Category_color4
+{
+  background-color: lightcyan !important;
+}
+
+.Category_color5
+{
+  background-color: lightpink !important;
+}
+
+.Category_color6
+{
+  background-color: lightgreen !important;
+}
+
+/*----------------------------REPORT--------------------------------------------*/
+
+/*----------------------------CHART--------------------------------------------*/
+
+.Dashboard .Report .Chart .Complete
+{
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.Dashboard .Report .Chart .Complete h3
+{
+  line-height: 0px;
+}
+
+.Dashboard .Report .Chart .Complete p
+{
+  color: #727272;
+}
+
+.Dashboard .Report .Chart
+{
+  background-color: white;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/*----------------------------REPORT--------------------------------------------*/
+
+.Dashboard .Report .Recent_Module .Listing .Title h2
+{
+  line-height: 0px;
+}
+
+.Dashboard .Report .Recent_Module .Listing .Title p
+{
+  color: #727272;
+}
+
+.Dashboard .Report .Recent_Module .Listing
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Dashboard .Report .Recent_Module
+{
+  background-color: white;
+  padding: 15px 15px 15px 50px;
+  margin-bottom: 30px;
+}
+
+.Dashboard .Report .Recent_Module .Category
+{
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  position: absolute;
+  left: 10px;
+  margin-top: 20px;
+}
+
+/*----------------------------MEDIA QUERY 768px--------------------------------------------*/
+
+@media only screen and (min-width: 768px)
+{
+/*----------------------------MAIN--------------------------------------------*/
+  .Dashboard .Main .Search
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .Dashboard .Main .Search form
+  {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  section.Main .Module_List
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section.Main .Module_List .Module
+  {
+    width: 47%;
+  }
+
+  section.Main .Module_List .Module span
+  {
+    margin-top: 15px;
+  }
+
+/*----------------------------REPORT--------------------------------------------*/
+  section.Report
+  {
+    display: flex;
+    justify-content: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    padding-top:70px;
+  }
+
+  section.Report .Chart
+  {
+    width: 40%;
+  }
+  section.Report .Recent_Module
+  {
+    width: 55%;
+  }
+  section.Report .Recent_Module .Listing span
+  {
+    margin-top: 15px;
+  }
+}
+
+/*----------------------------MEDIA QUERY 1024px--------------------------------------------*/
+@media only screen and (min-width: 1024px)
+{
+  .Dashboard .Navigation,
+  .Dashboard .Navigation div span,
+  section.Report
+  {
+    display: block;
+  }
+
+  .Dashboard .Navigation
+  {
+    width: 60px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  section.Main
+  {
+    width: 65%;
+    margin-left: 90px;
+    margin-right: 20px;
+  }
+  section.Report
+  {
+    width: 27%;
+    padding-top: 0px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: transparent;
+  }
+
+  section.Report .Chart,
+  section.Report .Recent_Module
+  {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .Dashboard .Navigation div
+  {
+    margin-top: 18vh;
+    margin-bottom: 18vh;
+  }
+
+  .Dashboard .Navigation div span
+  {
+    margin-top: 5vh;
+  }
+}
+
+/*----------------------------MEDIA QUERY 1111px--------------------------------------------*/
+@media only screen and (min-width: 1111px)
+{
+  section.Main .Module_List .Module
+  {
+    width: 32%;
+  }
+
+  section.Main
+  {
+    width: 65%;
+    margin-left: 90px;
+    margin-right: 20px;
+  }
+}
+
+/*----------------------------MEDIA QUERY 1500px--------------------------------------------*/
+@media only screen and (min-width: 1500px)
+{
+  section.Main
+  {
+    width: 65%;
+    margin-left: 90px;
+    margin-right: 20px;
+  }

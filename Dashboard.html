@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" charset="utf-8"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/icons.css">
+  <link rel="stylesheet" href="CSS/d_style.css">
+</head>
+
+<body>
+  <div class="Dashboard">
+    <section class="Navigation">
+
+      <img src="Images/Icon.png" alt="Logo" class="Logo">
+      <div>
+        <a href="Dashboard.html"><span class="material-icons-outlined">dashboard</span></a>
+        <a href="Modules.html"><span class="material-icons-outlined">menu_book</span></a>
+        <a href="Account.html"><span class="material-icons-outlined">account_circle</span></a>
+        <a href="Setting.html"><span class="material-icons-outlined">settings</span></a>
+      </div>
+
+      <img src="Images/Icon.png" alt="Profile Pic" class="User">
+    </section>
+
+    <section class="Main">
+
+      <div class="Search">
+
+        <form class="" action="" method="post">
+          <input type="text" name="search" id="searchModule" value="" placeholder="Search Here">
+          <span class="material-icons-outlined">search</span>
+        </form>
+        <div class="Notification">
+          <span class="material-icons-outlined">notifications</span>
+        </div>
+
+      </div>
+
+      <div class="Title">
+
+        <h1>My Modules</h1>
+        <label for="Modules">Sort By</label>
+        <select name="Modules" id="modulesFilter">
+          <option value="Empty">All Projects</option>
+          <option value="recent">Recent Modules</option>
+          <option value="finished">Finished Modules</option>
+          <option value="ongoing">Ongoing Modules</option>
+        </select>
+
+      </div>
+
+      <div class="Module_List">
+
+        <div class="Module" data-status="finished" title="Finished Project">
+          <div class="Category Category_color1"></div>
+            <h2 class="h">Maths</h2>
+            <p>(Activity)</p>
+            <ul>
+              <li>(Maths Topics here)</li>
+            </ul>
+            <div class="meta">
+              <span class="material-icons-outlined">arrow_right_alt</span>
+            </div>
+
+        </div>
+
+        <div class="Module" data-status="ongoing" title="Ongoing Project">
+
+          <div class="Category Category_color2"></div>
+            <h2>Physics</h2>
+            <p>(Activity)</p>
+            <ul>
+              <li>(Physics Topics here)</li>
+            </ul>
+            <div class="meta">
+              <span class="material-icons-outlined">arrow_right_alt</span>
+            </div>
+
+        </div>
+
+        <div class="Module" data-status="recent" title="Recent Project">
+
+          <div class="Category Category_color3"></div>
+            <h2>Chemistry</h2>
+            <p>(Activity)</p>
+            <ul>
+              <li>(Chemistry Topics here)</li>
+            </ul>
+            <div class="meta">
+              <span class="material-icons-outlined">arrow_right_alt</span>
+            </div>
+
+        </div>
+
+        <div class="Module" data-status="finished" title="Finished Project">
+
+          <div class="Category Category_color4"></div>
+            <h2>Electrical Maintainance</h2>
+            <p>(Activity)</p>
+            <ul>
+              <li>(EM Topics here)</li>
+            </ul>
+            <div class="meta">
+              <span class="material-icons-outlined">arrow_right_alt</span>
+            </div>
+
+        </div>
+
+        <div class="Module" data-status="ongoing" title="Ongoing Project">
+
+          <div class="Category Category_color5"></div>
+            <h2>Computer Science</h2>
+            <p>(Activity)</p>
+            <ul>
+              <li>(CS Topics here)</li>
+            </ul>
+            <div class="meta">
+              <span class="material-icons-outlined">arrow_right_alt</span>
+            </div>
+
+        </div>
+
+        <div class="Module" data-status="recent" title="Recent Project">
+
+          <div class="Category Category_color6"></div>
+            <h2>English</h2>
+            <p>(Activity)</p>
+            <ul>
+              <li>(English Topics here)</li>
+            </ul>
+            <div class="meta">
+              <span class="material-icons-outlined">arrow_right_alt</span>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+    <section class="Report">
+      <div class="Chart">
+        <h2>Total Modules</h2>
+        <canvas id="myChart" width="400" height="400"></canvas>
+        <div class="Complete">
+          <h3>(No. of items completed)</h3>
+          <p>(Total number available)</p>
+        </div>
+      </div>
+
+      <div class="Recent_Module">
+
+        <div class="Listing">
+          <div class="Title">
+            <div class="Category Category_color1"></div>
+              <h2>Maths</h2>
+            </div>
+            <span class="material-icons-outlined">more_vert</span>
+          </div>
+
+          <div class="Listing">
+            <div class="Title">
+              <div class="Category Category_color2"></div>
+                <h2>Physics</h2>
+              </div>
+              <span class="material-icons-outlined">more_vert</span>
+            </div>
+
+          <div class="Listing">
+            <div class="Title">
+              <div class="Category Category_color3"></div>
+                <h2>Chemistry</h2>
+              </div>
+              <span class="material-icons-outlined">more_vert</span>
+            </div>
+
+          <div class="Listing">
+            <div class="Title">
+              <div class="Category Category_color6"></div>
+                <h2>English</h2>
+              </div>
+              <span class="material-icons-outlined">more_vert</span>
+            </div>
+
+        </div>
+      </section>
+    </div>
+    <script src="JavaScript/d_script.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>User Info</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/icons.css">
+    <link rel="stylesheet" href="CSS/a_style.css">
+  </head>
+
+  <body>
+    <div class="Account">
+      <section class="Navigation">
+
+        <img src="Images/Icon.png" alt="Logo" class="Logo">
+        <div>
+          <a href="Dashboard.html"><span class="material-icons-outlined">dashboard</span></a>
+          <a href="Modules.html"><span class="material-icons-outlined">menu_book</span></a>
+          <a href="Account.html"><span class="material-icons-outlined">account_circle</span></a>
+          <a href="Setting.html"><span class="material-icons-outlined">settings</span></a>
+        </div>
+
+        <img src="Images/Icon.png" alt="Profile Pic" class="User">
+        <div class="Container">
+          <img src="Images/Icon.png" alt="">
+          <h3>(Name)</h3>
+          <p>(Email Address)</p>
+          <hr>
+          <button name="SignOut">Sign Out</button>
+        </div>
+      </section>
+
+      <section class="Main">
+
+        <div class="Title">
+          <h1>My Information</h1>
+          <hr>
+        </div>
+        <form class="" action="index.html" method="post" enctype="text/plain">
+          <table>
+            <tr>
+              <td class="Labels"><label>First Name</label></td>
+              <td class="Labels"><label>Last Name</label></td>
+            </tr>
+            <tr>
+              <td class="Inputs"><input type="text" name="" value=""></td>
+              <td class="Inputs"><input type="text" name="" value=""></td>
+            </tr>
+            <tr>
+              <td class="Labels"><label>Email Address</label></td>
+              <td class="Labels"><label>Phone Number</label></td>
+            </tr>
+            <tr>
+              <td class="Inputs"><input type="email" name="" value=""></td>
+              <td class="Inputs"><input type="Number" name="" value=""></td>
+            </tr>
+            <tr>
+              <td class="Labels"><label>Grade</label></td>
+              <td class="Labels"><label>Date Of Birth</label></td>
+            </tr>
+            <tr>
+              <td class="Inputs">
+                <select class="Grade" name="">
+                  <option>...</option>
+                  <option>XI</option>
+                  <option>XII</option>
+                </select>
+              </td>
+              <td class="Inputs">
+                <input type="date" name="DOB" value="">
+              </td>
+            </tr>
+            <tr>
+              <td class="Labels"><button name="Save" type="submit">Save Changes</button></td>
+            </tr>
+          </table>
+          <br><br><br>
+          <button name="SignOut" margin-left="20px">Sign Out</button>
+        </form>
+      </section>
+    </div>
+
+  </body>
+</html>
